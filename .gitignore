@@ -152,5 +152,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# debug
+anya.mdl
+anya-dic.db
+
 # PyCharm
 .idea/
