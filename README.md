@@ -1,7 +1,7 @@
 # anya
 
 ## モデル、及び辞書ファイルのダウンロード
-下記の場所からモデルファイル及び辞書ファイルをダウンロードしてください
+下記の場所からモデルファイル及び辞書ファイルをダウンロードしてください  
 https://www.dropbox.com/sh/i6y5wqhdccb4kur/AAA-a733IiDASpQe9mQk4vUYa?dl=0
 
 * anya.mdl

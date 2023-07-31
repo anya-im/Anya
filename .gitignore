@@ -154,6 +154,7 @@ cython_debug/
 
 # debug
 anya.mdl
+anya.onnx
 anya-dic.db
 
 # PyCharm
