@@ -5,7 +5,7 @@ RUN pip3 install torch torchvision torchaudio --index-url https://download.pytor
 COPY setup.py requirements.txt ./
 RUN pip3 install -r requirements.txt
 
-ADD anya .
+ADD anya ./anya
 RUN python3 setup.py install
 
 ENTRYPOINT ["anya"]
