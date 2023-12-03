@@ -1,4 +1,4 @@
-grpcio
+grpcio-tools
 torch
 numpy
 marisa_trie
