@@ -1,7 +1,7 @@
 import argparse
 import grpc
-import anya.pb.anya_pb2
-import anya.pb.anya_pb2_grpc
+from .pb.anya_pb2_grpc import AnyaIMStub
+from .pb.anya_pb2 import ConvReq
 
 
 def main():
@@ -11,12 +11,12 @@ def main():
 
     port_str = '[::]:' + args.port
     with grpc.insecure_channel(port_str) as channel:
-        stub = anya.pb.anya_pb2_grpc.AnyaIMStub(channel)
+        stub = AnyaIMStub(channel)
 
         print('--ANYA Client--')
         while True:
             kana = input("かな > ")
-            response = stub.Convert(anya.pb.anya_pb2.ConvReq(in_str=kana))
+            response = stub.Convert(ConvReq(in_str=kana))
             print("漢字: " + response.out_str)
 
 
