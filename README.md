@@ -17,6 +17,11 @@ python setup.py install
 anya -m anya.mdl -d anya-dic.db
 ```
 
+### from docker
+```shell
+docker run -d -p 30055:30055 -v $HOME/.local/share/anya:/opt/anya ghcr.io/anya-im/anya -m anya.mdl -d anya-dic.db
+```
+
 ※ 起動方法は今後変わることが想定されます
 
 
