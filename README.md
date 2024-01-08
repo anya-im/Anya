@@ -23,9 +23,3 @@ docker run -d -p 30055:30055 -v $HOME/.local/share/anya:/opt/anya ghcr.io/anya-i
 ```
 
 ※ 起動方法は今後変わることが想定されます
-
-
-## Protobuf compile for gRPC
-```shell
-python -m grpc_tools.protoc -I./anya/pb --python_out=anya/pb --grpc_python_out=anya/pb anya.proto
-```
